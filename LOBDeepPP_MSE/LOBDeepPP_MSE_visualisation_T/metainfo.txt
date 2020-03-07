@@ -1,0 +1,15 @@
+
+Name of Quantlet: LOBDeepPP_MSE_visualisation_T
+
+Published in: ''
+
+Description: 'Joint Limit order book ask and bid price predition for multiple predicton horizons with a neural networks. This script creates plots meant for analysis of the fixed order book level application for training, validation and test dataset.'
+
+Keywords: 'Limit order book, finance, forecasting, prediction, MSE, evaluation, plotting'
+
+Author: 'Marius Sterling'
+
+See also: 'LOBDeepPP'
+
+Submitted:  ''
+
