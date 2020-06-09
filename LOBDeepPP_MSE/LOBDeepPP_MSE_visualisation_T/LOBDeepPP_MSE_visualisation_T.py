@@ -70,6 +70,7 @@ for ds in mse.keys():
 
 # %% MSE vs prediction horizon with order levels for ask and bid seperated
 for ds in mse.keys():
+    ds = 'valid'
     for bid in [True, False]:
         ax = plt.subplot(111)
         for k, v in sorted(mse[ds].items(),
@@ -82,6 +83,10 @@ for ds in mse.keys():
                   title='Time lags $T$')
         if ds == 'test': 
             plt.ylim([0.0035, 0.014])
+        elif ds == 'test':
+            plt.ylim([0.007, 0.016])
+        elif ds == 'valid':
+            plt.ylim([0.005, 0.016])
         plt.savefig(f'{path_save}/ph_mse_ol_{ds}_{"bid" if bid else "ask"}.pdf',
                     bbox_inches='tight', dpi=300)
 #        plt.ylim([0.0035, 0.01])
